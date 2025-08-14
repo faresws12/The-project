@@ -4,7 +4,7 @@ document.querySelector("#wordList").textContent = "Choose from: " + words.join("
 
 let secret = words[Math.floor(Math.random() * words.length)];
 
-let attempts = 0; // عدد المحاولات
+let attempts = 0;
 let guessInput = document.querySelector("#guessInput");
 let result = document.querySelector("#result");
 
@@ -23,3 +23,4 @@ document.querySelector("#guessBtn").addEventListener("click", function () {
         result.style.color = "blue";
     }
 });
+
